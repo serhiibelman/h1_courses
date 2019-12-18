@@ -1,0 +1,2 @@
+.main-menu{display:flex;flex-direction:row;justify-content:start;align-items:center;width:30%;height:100vh;position:fixed;background:#306}.content{margin-left:30%;width:auto;height:800px;background:#60c}html,body{margin:0 auto}*{box-sizing:border-box;font-family:sans-serif;color:#f0e6ff}a{text-decoration:none;color:#f0e6ff}ul{margin:0;padding:0}li{list-style:none}
+/*# sourceMappingURL=main.css.map */
