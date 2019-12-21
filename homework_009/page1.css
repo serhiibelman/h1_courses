@@ -1,0 +1,143 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.links {
+	color: orange;
+	text-decoration: none;
+}
+
+.flex-container {
+	display: flex;
+	padding: 20px;
+}
+
+.block-1 {
+	width: 25%;
+	padding: 20px;
+	border: 1px solid gray;
+}
+
+.show-more {
+	position: relative;
+	padding: 20px 0;
+	border-bottom: 1px solid lightgray;
+}
+
+.show-more .links {
+	display: block;
+}
+
+.block-1 .show-on-map .links::after {
+	content: '\f054';
+	font-family: "Font Awesome 5 Free";
+	position: absolute;
+	top: 20px;
+	right: 8px;
+	font-weight: bold;
+	color: orange;
+}
+
+.block-1 .flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 10px 0;
+}
+
+.block-1 .flex-container .col {
+	width: 50%;
+}
+
+.col .row {
+	padding: 5px 0;
+	position: relative;
+}
+
+.col-1 .row {
+	padding-left: 30px;
+}
+
+.col-1 .cls::before {
+	content: '\f555';
+	font-family: "Font Awesome 5 Free";
+	color: #b3b3b3;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.col-1 .floors::before {
+	content: '\f887';
+	font-family: "Font Awesome 5 Free";
+	color: #b3b3b3;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.col-1 .technology::before {
+	content: '\f009';
+	font-family: "Font Awesome 5 Free";
+	color: #b3b3b3;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.col-1 .n-houses::before {
+	content: '\f1ad';
+	font-family: "Font Awesome 5 Free";
+	color: #b3b3b3;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.block-1 .flex-container .col-2 {
+	font-weight: bold;
+}
+
+.block-1 .about .links::after {
+	content: '\f078';
+	font-family: "Font Awesome 5 Free";
+	position: absolute;
+	top: 20px;
+	left: 93px;
+	font-weight: bold;
+	color: orange;
+}
+
+.block-1 .queue {
+	border-bottom: 2px solid orange;
+	padding-bottom: 10px;
+}
+
+.block-1 .queue .links::after {
+	content: '\f0dd';
+	font-family: "Font Awesome 5 Free";
+	position: absolute;
+	top: 20px;
+	right: 8px;
+	font-weight: bold;
+	color: orange;
+}
+
+.block-1 .queue-info {
+	padding-top: 20px;
+}
+
+.queue-info .col .row {
+	padding: 5px 0 5px 0;
+}
+
+.block-1 .flats {
+	justify-content: space-between;
+
+}
+
+
+
+
+

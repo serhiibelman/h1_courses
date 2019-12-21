@@ -1,0 +1,107 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.gray-clr {
+	color: #999999;
+}
+
+.links {
+	color: orange;
+	text-decoration: none;
+}
+
+.main-container {
+	width: 35%;
+	padding: 20px;
+	border: 1px solid gray;
+}
+.flex-container {
+	display: flex;
+}
+
+.content {
+	flex-direction: column;
+}
+
+.apartment {
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 5px;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid lightgray;
+}
+
+.apartment .col-1 {
+	width: 32%;
+}
+
+.apartment .col-2 {
+	width: 38%;
+}
+
+.apartment .col-3 {
+	width: 100px;
+	height: 120px;
+	background: no-repeat center center url('./img/apartment.jpg');
+	background-size: cover;
+	background-color: gray;
+}
+
+.progress-border {
+	width: 80%;
+	background-color: #e6e6e6;
+}
+
+.progress-bar {
+	width: 20%;
+	height: 10px;
+	background-color: red;
+}
+
+.bottom-menu {
+	justify-content: space-around;
+}
+
+.bottom-menu div {
+	position: relative;
+	padding-left: 25px;
+}
+
+.bottom-menu .result::before {
+	content: '\f03a';
+	font-family: "Font Awesome 5 Free";
+	position: absolute;
+	top: 2px;
+	left: 0;
+	font-weight: bold;
+}
+
+.bottom-menu .heart::before {
+	content: '\f004';
+	font-family: "Font Awesome 5 Free";
+	position: absolute;
+	top: 2px;
+	left: 0;
+	font-weight: bold;
+}
+
+.bottom-menu .map::before {
+	content: '\f3c5';
+	font-family: "Font Awesome 5 Free";
+	position: absolute;
+	top: 2px;
+	left: 0;
+	font-weight: bold;
+}
+
+.bottom-menu .employee::before {
+	content: '\f807';
+	font-family: "Font Awesome 5 Free";
+	position: absolute;
+	top: 2px;
+	left: 0;
+	font-weight: bold;
+}
