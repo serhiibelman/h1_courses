@@ -1,13 +1,96 @@
 .content
-	margin-left: 30%
+	margin-left: 25%
 	width: auto
 
+.content-wrap
+	padding: 40px 0 40px 70px
+	width: 60%
+
 .welcome
-	+flex(column, center, stretch)
+	+flex(column, center, flex-start)
 	height: 100vh
-	padding: 0 200px 0 100px
+	width: 100%
+	font-size: 22px
+	padding-top: 0
+	padding-bottom: 0
 	color: $corporate-color-1
 	background: $background-color
+	.descr-title
+		font-size: 50px
+		font-weight: bolder
 	.w-descr
+		width: 60%
+		color: $descr-clr
+		line-height: 1.6
+		margin: 30px 0
 		a
-			border-bottom: 1px solid black
+			color: $descr-clr
+			border-bottom: 1px dotted $descr-clr
+		a:hover
+			color: $corporate-color-1
+			border-bottom: none
+	.btn
+		+btn($descr-btn-clr-1, $descr-btn-clr-2, $descr-btn-f-size)
+
+.content-title
+	color: $corporate-color-1
+	font-size: 30px
+	font-weight: bolder
+
+.content-p
+	font-size: 18px
+	font-weight: normal
+	line-height: 1.6
+	margin: 25px 0
+
+.about
+	color: $about-clr
+	.btn
+		+btn($about-btn-clr-1, $about-btn-clr-2, $about-btn-f-size)
+	.content-p
+		width: 90%
+
+.block-img
+	width: 371px
+	height: 360px
+	margin: 0
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	background-color: gray
+
+.about-block-1
+	+flex(row, flex-start, center)
+	background: $about-b1-clr
+	.block-1-img
+		background-image: url("../../src/img/s10.jpg")
+
+.about-block-2
+	+flex(row, flex-start, center)
+	background: $about-b2-clr
+	.block-2-img
+		background-image: url("../../src/img/amsterdam.jpg")
+
+.about-block-3
+	+flex(row, flex-start, center)
+	background: $about-b3-clr
+	.block-3-img
+		background-image: url("../../src/img/norway.jpg")
+
+.labor
+	width: 100%
+	padding-right: 40px
+	color: $labor-clr
+	background-color: $labor-backgr-clr
+	.btn
+		+btn($labor-btn-clr-1, $labor-btn-clr-2, $labor-btn-f-size)
+
+.labor-blocks
+	+flex(row, flex-start, center)
+	flex-wrap: wrap
+	margin-bottom: 40px	
+	.labor-block
+		width: 50%
+		padding: 40px 40px 40px 120px
+		border: 1px solid $labor-border-clr
+		background-color: $labor-backgr-clr-2

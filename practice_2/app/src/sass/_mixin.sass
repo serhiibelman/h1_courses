@@ -3,3 +3,14 @@
 	flex-direction: $fd
 	justify-content: $jc
 	align-items: $ai
+
+@mixin btn($clr-1, $clr-2, $f-size)
+	display: inline-block
+	color: $clr-1
+	font-size: $f-size
+	border: 1px solid $clr-2
+	border-radius: 30px
+	padding: 15px 40px
+	&:hover
+		border-color: $clr-1
+		background-color: $clr-2
