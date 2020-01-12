@@ -1,13 +1,13 @@
-@media (min-device-width: 358px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch; }
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  visibility: hidden; }
 
-  .top-bar {
-    color: black;
-    background-color: green; } }
+@media (max-width: 400px) {
+  .container {
+    visibility: visible; } }
 .top-bar {
   color: white;
   background-color: #C2185B; }

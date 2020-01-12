@@ -1,12 +1,16 @@
 
-@media (min-device-width: 358px)
-	.container
-		+flex(column, flex-start, stretch)
 
-	.top-bar
-		color: black
-		background-color: green
+.container
+	+flex(column, flex-start, stretch)
+	visibility: hidden
+
+@media (max-width: 400px)
+	.container
+		visibility: visible
 
 .top-bar
 	color: $top-bar-color
 	background-color: $top-bar-backgr
+
+
+
