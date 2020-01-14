@@ -4,6 +4,7 @@
 	background-color: $contacts-backgr-clr
 
 .contacts-form
+	+flex(row, flex-start, flex-start)
 	.content-title
 		font-size: 20px
 	.input-cont
@@ -12,4 +13,8 @@
 		border: 1px solid $contacts-border-clr
 	.input-cont:focus
 		border: 2px solid $contacts-btn-clr-1
+
+.contacts-info
+	padding-left: 40px
+	border-left: 1px solid $contacts-border-clr
 

@@ -168,14 +168,23 @@
   color: #ADA0D2;
   background-color: #5E42A6; }
 
-.contacts-form .content-title {
-  font-size: 20px; }
-.contacts-form .input-cont {
-  color: #ADA0D2;
-  background-color: #664CAB;
-  border: 1px solid #7C67B8; }
-.contacts-form .input-cont:focus {
-  border: 2px solid white; }
+.contacts-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  .contacts-form .content-title {
+    font-size: 20px; }
+  .contacts-form .input-cont {
+    color: #ADA0D2;
+    background-color: #664CAB;
+    border: 1px solid #7C67B8; }
+  .contacts-form .input-cont:focus {
+    border: 2px solid white; }
+
+.contacts-info {
+  padding-left: 40px;
+  border-left: 1px solid #7C67B8; }
 
 html, body {
   margin: 0 auto; }
