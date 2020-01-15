@@ -3,11 +3,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  visibility: hidden; }
+  visibility: visible; }
 
-@media (max-width: 400px) {
+@media (min-device-width: 400px) {
   .container {
-    visibility: visible; } }
+    visibility: hidden; } }
 .top-bar {
   display: flex;
   flex-direction: row;
@@ -38,12 +38,8 @@ header {
   header .header-item:nth-child(2) {
     flex-grow: 6; }
 
-.inbox {
-  padding-bottom: 140px; }
-
 .messages {
-  height: 100vh;
-  overflow-y: scroll; }
+  height: 100vh; }
 
 .msg {
   padding: 20px;
@@ -71,6 +67,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start; }
+  .msg:last-child {
+    padding-bottom: 160px; }
 
 .nav-bar {
   display: flex;

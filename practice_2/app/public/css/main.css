@@ -168,23 +168,49 @@
   color: #ADA0D2;
   background-color: #5E42A6; }
 
-.contacts-form {
+.contacts-form-wrap {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start; }
-  .contacts-form .content-title {
+  .contacts-form-wrap .content-title {
     font-size: 20px; }
-  .contacts-form .input-cont {
+  .contacts-form-wrap .input-cont {
     color: #ADA0D2;
+    padding: 15px;
     background-color: #664CAB;
-    border: 1px solid #7C67B8; }
-  .contacts-form .input-cont:focus {
-    border: 2px solid white; }
+    border: 1px solid #7C67B8;
+    border-radius: 6px;
+    resize: none; }
+  .contacts-form-wrap .input-cont:focus {
+    border: 2px solid white;
+    outline: none; }
+
+.contacts-form-wrap #subject {
+  width: 804px;
+  height: 140px; }
+
+.contacts-form {
+  padding-right: 40px; }
 
 .contacts-info {
   padding-left: 40px;
   border-left: 1px solid #7C67B8; }
+
+.footer {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  color: #5A4D95;
+  background-color: #493382; }
+  .footer a {
+    color: #5A4D95; }
+  .footer span {
+    padding: 0 10px;
+    border-left: 1px solid #5A4D95; }
+    .footer span:first-child {
+      padding-left: none;
+      border-left: none; }
 
 html, body {
   margin: 0 auto; }

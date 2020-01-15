@@ -3,18 +3,29 @@
 	color: $contacts-clr
 	background-color: $contacts-backgr-clr
 
-.contacts-form
+.contacts-form-wrap
 	+flex(row, flex-start, flex-start)
 	.content-title
 		font-size: 20px
 	.input-cont
 		color: $contacts-clr
+		padding: 15px
 		background-color: $contacts-backgr-clr-2
 		border: 1px solid $contacts-border-clr
+		border-radius: 6px
+		resize: none
 	.input-cont:focus
 		border: 2px solid $contacts-btn-clr-1
+		outline: none
+
+.contacts-form-wrap
+	#subject
+		width: 804px
+		height: 140px
+
+.contacts-form
+	padding-right: 40px
 
 .contacts-info
 	padding-left: 40px
 	border-left: 1px solid $contacts-border-clr
-
