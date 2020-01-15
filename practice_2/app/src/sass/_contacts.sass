@@ -2,6 +2,8 @@
 	width: 100%
 	color: $contacts-clr
 	background-color: $contacts-backgr-clr
+	a
+		color: $contacts-clr
 
 .contacts-form-wrap
 	+flex(row, flex-start, flex-start)
@@ -20,12 +22,26 @@
 
 .contacts-form-wrap
 	#subject
-		width: 804px
+		width: 600px
 		height: 140px
+
+.name-email-flex
+	+flex(row, space-between, flex-start)
+
+.input-cont-wrap
+	width: 44%
+	input
+		width: 100%
 
 .contacts-form
 	padding-right: 40px
+	.input-cont
+		margin: 20px 0
 
 .contacts-info
 	padding-left: 40px
 	border-left: 1px solid $contacts-border-clr
+	
+.social
+	i
+		padding-right: 15px

@@ -108,10 +108,16 @@
 		</p>
 		<div class="contacts-form-wrap">
 			<form class="contacts-form" action="." method="POST">
-				<label for="name" class="content-title">Name</label><br>
-				<input id="name" class="input-cont" type="text" name=""><br>
-				<label for="email" class="content-title">Eemail</label><br>
-				<input id="email" class="input-cont" type="text" name=""><br>
+				<div class="name-email-flex">
+					<div class="input-cont-wrap">
+						<label for="name" class="content-title">Name</label><br>
+						<input id="name" class="input-cont" type="text" name=""><br>
+					</div>
+					<div class="input-cont-wrap">
+						<label for="email" class="content-title">Email</label><br>
+						<input id="email" class="input-cont" type="email" name=""><br>
+					</div>
+				</div>
 				<label for="subject" class="content-title">Message</label><br>
 				<textarea id="subject" class="input-cont"></textarea><br>
 			</form>
@@ -127,7 +133,13 @@
 				<div class="content-title">Phone</div>
 				<p class="content-p">(000) 000-0000</p>
 				<div class="content-title">Social</div>
-				
+				<p class="social content-p">
+					<a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.github.com/"><i class="fab fa-github"></i></a>
+					<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+				</p>
 			</div>
 		</div>
 	</div>
