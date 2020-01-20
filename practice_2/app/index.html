@@ -7,15 +7,16 @@
 </head>
 <body>
 <ul class="menu-container">
-	<li class="menu-item"><a href="#">WELCOME</a></li>
-	<li class="menu-item"><a href="#">WHO WE ARE</a></li>
-	<li class="menu-item"><a href="#">WHAT WE DO</a></li>
-	<li class="menu-item"><a href="#">GET IN TOUCH</a></li>
+	<li class="menu-item"><a href="#welcome">WELCOME</a></li>
+	<li class="menu-item"><a href="#about">WHO WE ARE</a></li>
+	<li class="menu-item"><a href="#labor">WHAT WE DO</a></li>
+	<li class="menu-item"><a href="#contacts">GET IN TOUCH</a></li>
 </ul>
 
 
 <div class="content">
 	<div class="welcome content-wrap">
+		<a name="welcome"></a>
 		<div class="descr-title">Hyperspace</div>
 		<p class="w-descr">
 			Just another fine responsive site template designed by <a href="#">HTML5 UP</a> and released for free under the <a href="#">Creative Commons</a>.
@@ -24,6 +25,7 @@
 		
 	</div>
 	<div class="about">
+		<a name="about"></a>
 		<div class="about-block-1">
 			<div class="block-img block-1-img"></div>
 			<div class="content-wrap">
@@ -56,43 +58,49 @@
 		</div>
 	</div>
 	<div class="labor content-wrap">
+		<a name="labor"></a>
 		<div class="content-title">What we do</div>
 		<p class="content-p">
 			Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.
 		</p>
 		<div class="labor-blocks">
-			<div class="labor-block">
+			<div class="labor-block labor-block-1">
+				<span class="icon icon-1"></span>
 				<div class="content-title">Lorem ipsum amet</div>
 				<p class="content-p">
 					Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
 				</p>
 			</div>
-			<div class="labor-block">
+			<div class="labor-block labor-block-2">
+				<span class="icon icon-2"></span>
 				<div class="content-title">Aliquam sed nullam</div>
 				<p class="content-p">
 					Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
 				</p>
 			</div>
-			<div class="labor-block">
-				
+			<div class="labor-block labor-block-3">
+				<span class="icon icon-3"></span>
 				<div class="content-title">Sed erat ullam corper</div>
 				<p class="content-p">
 					Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
 				</p>
 			</div>
-			<div class="labor-block">
+			<div class="labor-block labor-block-4">
+				<span class="icon icon-4"></span>
 				<div class="content-title">Veroeros quis lorem</div>
 				<p class="content-p">
 					Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
 				</p>
 			</div>
-			<div class="labor-block">
+			<div class="labor-block labor-block-5">
+				<span class="icon icon-5"></span>
 				<div class="content-title">Urna quis bibendum</div>
 				<p class="content-p">
 					Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
 				</p>
 			</div>
-			<div class="labor-block">
+			<div class="labor-block labor-block-6">
+				<span class="icon icon-6"></span>
 				<div class="content-title">Aliquam urna dapibus</div>
 				<p class="content-p">
 					Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
@@ -102,6 +110,7 @@
 		<a href="#" class="btn">LEARN MORE</a>
 	</div>
 	<div class="contacts content-wrap">
+		<a name="contacts"></a>
 		<div class="content-title">Get in touch</div>
 		<p class="content-p">
 			Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.
@@ -120,6 +129,7 @@
 				</div>
 				<label for="subject" class="content-title">Message</label><br>
 				<textarea id="subject" class="input-cont"></textarea><br>
+				<input class="send-msg" type="submit" name="send-msg" value="SEND MESSAGE">
 			</form>
 			<div class="contacts-info">
 				<div class="content-title">Address</div>
@@ -129,7 +139,7 @@
 					USA<br>
 				</p>
 				<div class="content-title">Email</div>
-				<p class="content-p">user@untitled.tld</p>
+				<p class="content-p"><a href="#">user@untitled.tld</a></p>
 				<div class="content-title">Phone</div>
 				<p class="content-p">(000) 000-0000</p>
 				<div class="content-title">Social</div>
@@ -145,8 +155,8 @@
 	</div>
 	<div class="footer content-wrap">
 		<span>© Untitled. All rights reserved.</span>
-		<span>Images: <a href="#">Unsplash</a></span>
-		<span>Design: <a href="#">HTML5 UP</a></span>
+		<span>Images: <a class="dotted-link" href="#">Unsplash</a></span>
+		<span>Design: <a class="dotted-link" href="#">HTML5 UP</a></span>
 	</div>
 </div>
 </body>

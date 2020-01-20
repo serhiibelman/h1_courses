@@ -10,7 +10,7 @@
 	+flex(column, center, flex-start)
 	height: 100vh
 	width: 100%
-	font-size: 22px
+	font-size: 20px
 	padding-top: 0
 	padding-bottom: 0
 	color: $corporate-color-1
@@ -24,11 +24,7 @@
 		line-height: 1.6
 		margin: 30px 0
 		a
-			color: $descr-clr
-			border-bottom: 1px dotted $descr-clr
-		a:hover
-			color: $corporate-color-1
-			border-bottom: none
+			+d-link($descr-clr, $corporate-color-1)
 	.btn
 		+btn($descr-btn-clr-1, $descr-btn-clr-2, $descr-btn-f-size)
 
@@ -38,7 +34,7 @@
 	font-weight: bolder
 
 .content-p
-	font-size: 18px
+	font-size: 16px
 	font-weight: normal
 	line-height: 1.6
 	margin: 25px 0
@@ -86,11 +82,40 @@
 		+btn($labor-btn-clr-1, $labor-btn-clr-2, $labor-btn-f-size)
 
 .labor-blocks
-	+flex(row, flex-start, center)
+	+flex(row, flex-start, stretch)
 	flex-wrap: wrap
-	margin-bottom: 40px	
-	.labor-block
-		width: 50%
-		padding: 40px 40px 40px 120px
-		border: 1px solid $labor-border-clr
-		background-color: $labor-backgr-clr-2
+	margin-bottom: 40px
+	
+.labor-block
+	position: relative
+	width: 50%
+	padding: 40px 40px 40px 120px
+	border: 1px solid $labor-border-clr
+	background-color: $labor-backgr-clr-2
+	.content-title
+		font-size: 20px
+
+.labor-block
+	.icon
+		display: inline-block
+		position: absolute
+		+flex(row, center, center)
+		width: 40px
+		height: 40px
+		color: $labor-backgr-clr-2
+		background-color: $corporate-color-1
+		border-radius: 50%
+		top: 30px
+		left: 52px
+	.icon-1::before
+		+labor-ico($code-ico)
+	.icon-2::before
+		+labor-ico($cloud-ico)
+	.icon-3::before
+		+labor-ico($cog-ico)
+	.icon-4::before
+		+labor-ico($tv-ico)
+	.icon-5::before
+		+labor-ico($link-ico)
+	.icon-6::before
+		+labor-ico($gem-ico)

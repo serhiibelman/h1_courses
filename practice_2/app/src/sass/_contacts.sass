@@ -37,11 +37,19 @@
 	padding-right: 40px
 	.input-cont
 		margin: 20px 0
+	.send-msg
+		+btn($contacts-btn-clr-1, $contacts-btn-clr-2, $contacts-btn-f-size)
+		background-color: $contacts-backgr-clr
 
 .contacts-info
 	padding-left: 40px
 	border-left: 1px solid $contacts-border-clr
+	a
+		+d-link($contacts-clr, $corporate-color-1)
+
 	
 .social
 	i
 		padding-right: 15px
+	a
+		border-bottom: none

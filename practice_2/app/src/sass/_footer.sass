@@ -5,11 +5,7 @@
 	color: $footer-clr
 	background-color: $footer-backgr-clr
 	a
-		color: $footer-clr
-		border-bottom: 1px dotted $footer-clr
-	a:hover
-		color: $corporate-color-1
-		border-bottom: none
+		+d-link($footer-clr, $corporate-color-1)
 	span
 		padding: 0 10px
 		border-left: 1px solid $footer-clr

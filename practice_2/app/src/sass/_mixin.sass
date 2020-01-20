@@ -14,3 +14,16 @@
 	&:hover
 		border-color: $clr-1
 		background-color: $clr-2
+
+@mixin d-link($clr, $hover-clr)
+	color: $clr
+	border-bottom: 1px dotted $clr
+	&:hover
+		color: $hover-clr
+		border-bottom: none
+
+@mixin labor-ico($content)
+	content: $content
+	font-family: "Font Awesome 5 Free"
+	font-weight: 900
+	

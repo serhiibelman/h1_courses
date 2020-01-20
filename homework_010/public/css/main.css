@@ -39,7 +39,8 @@ header {
     flex-grow: 6; }
 
 .messages {
-  height: 100vh; }
+  height: 100vh;
+  color: black; }
 
 .msg {
   padding: 20px;
@@ -53,7 +54,8 @@ header {
     font-weight: bold;
     padding-bottom: 5px; }
     .msg .title #msg-time {
-      font-weight: normal; }
+      font-weight: normal;
+      color: gray; }
   .msg .subject {
     display: flex;
     flex-direction: row;
@@ -66,7 +68,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start; }
+    align-items: flex-start;
+    color: gray; }
   .msg:last-child {
     padding-bottom: 160px; }
 
