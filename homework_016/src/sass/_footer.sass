@@ -1,0 +1,74 @@
+footer
+	+flex(row, space-between, stretch)
+	position: fixed
+	width: 100%
+	padding: 25px 25px
+	background-color: $footer-bcgr-clr
+	bottom: 0
+	div span
+		color: $auxiliary-color
+
+.info
+	position: relative
+	padding-right: 30px
+	cursor: pointer
+	&::after
+		position: absolute
+		color: $auxiliary-color
+		content: "\f05a"
+		font-family: "Font Awesome 5 Free"
+		font-weight: 900
+		top: -1px
+		right: 8px
+
+#contacts
+	+flex(row, space-between, stretch)
+	position: fixed
+	padding: 50px 120px
+	background-color: $contacts-bcgr-clr
+	bottom: 74px
+	p
+		font-size: 14px
+		margin-top: 10px
+		padding: 10px 0
+	.contact-descr
+		width: 47%
+	form
+		width: 47%
+	.flex-field
+		+flex(row, space-between, center)
+		margin-top: 20px
+		margin-bottom: 20px
+	.form-field
+		width: 48%
+		padding: 10px
+		border: none
+		background-color: $contacts-form-clr-2
+		&:focus
+			outline: 2px solid $btn-clr
+			outline-offset: -2px
+	#subject
+		width: 100%
+		height: 120px
+		margin-bottom: 20px
+
+.send-msg
+	+btn($main-color, $btn-clr, $btn-clr, $btn-hover-clr, 14px)
+
+.reset
+	+btn($auxiliary-color, $auxiliary-color, $contacts-bcgr-clr, $contacts-bcgr-clr, 14px)
+	&:hover
+		color: $btn-clr
+		border: 1px solid $btn-clr
+
+.social
+	color: $auxiliary-color
+	font-size: 20px
+	padding: 10px 0
+	a
+		padding-right: 10px
+	a:hover
+		color: $btn-clr
+
+.dotted-link
+	+dotted-link($auxiliary-color, $btn-clr)

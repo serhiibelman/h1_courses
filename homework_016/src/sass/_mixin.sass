@@ -3,3 +3,21 @@
 	flex-direction: $fd
 	justify-content: $jc
 	align-items: $ai
+
+@mixin btn($color, $border-clr, $bcgr-clr-1, $bcgr-clr-2, $f-size)
+	display: inline-block
+	color: $color
+	font-size: $f-size
+	padding: 10px 25px
+	border: 1px solid $border-clr
+	background-color: $bcgr-clr-1
+	&:hover
+		background-color: $bcgr-clr-2
+
+@mixin dotted-link($clr, $hover-clr)
+	color: $clr
+	border-bottom: 1px dotted $clr
+	&:hover
+		color: $hover-clr
+		text-decoration: none
+		border-bottom: none
