@@ -24,11 +24,22 @@ footer
 #contacts
 	+flex(row, space-between, stretch)
 	position: fixed
-	padding: 50px 120px
+	padding: 80px 130px
 	background-color: $contacts-bcgr-clr
 	bottom: 74px
+	// &::before
+	// 	content: ''
+	// 	filter: blur(150px)
+	// 	-webkit-filter: blur(130px)
+	// 	width: 100%
+	// 	height: 100vh
+	// 	position: fixed
+	// 	top: 0
+	// 	left: 0
+	// 	z-index: 1
+	// 	background: rgba(36, 38, 41, 0.5)
 	p
-		font-size: 14px
+		font-size: 16px
 		margin-top: 10px
 		padding: 10px 0
 	.contact-descr
@@ -49,8 +60,21 @@ footer
 			outline-offset: -2px
 	#subject
 		width: 100%
-		height: 120px
+		height: 220px
 		margin-bottom: 20px
+
+.close-btn
+	position: absolute
+	top: 10px
+	right: 25px
+	&::after
+		// position: absolute
+		color: $auxiliary-color
+		content: "\f00d"
+		font-family: "Font Awesome 5 Free"
+		font-weight: 900
+		font-size: 40px
+		
 
 .send-msg
 	+btn($main-color, $btn-clr, $btn-clr, $btn-hover-clr, 14px)
