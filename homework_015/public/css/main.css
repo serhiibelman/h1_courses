@@ -13,22 +13,86 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 50%;
-  min-height: 24em;
+  width: 40%;
   padding: 40px;
   background-color: white; }
 
 .avatar {
   width: 100px;
   height: 100px;
+  margin-bottom: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../src/img/cat2.jpeg");
   background-color: gray; }
 
-.login-form form {
+.usr-info {
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center; }
+  .usr-info span:first-child {
+    margin-bottom: 10px;
+    font-size: 20px; }
+  .usr-info span:last-child {
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 40px; }
 
+.login-form {
+  width: 60%;
+  margin-bottom: 20px; }
+  .login-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch; }
+  .login-form #enter {
+    padding: 10px 0;
+    color: white;
+    background-color: #4367B2;
+    border: none; }
+  .login-form #password {
+    padding: 5px; }
+  .login-form #restore {
+    padding: 5px 0;
+    font-size: 12px; }
+  .login-form .form-field {
+    margin-bottom: 10px; }
+
+#register {
+  font-size: 12px; }
+
+@media (max-width: 980px) {
+  .row {
+    width: 50%;
+    padding: 40px 20px; }
+
+  .login-form {
+    width: 60%; } }
+@media (max-width: 690px) {
+  .row {
+    width: 70%;
+    padding: 40px 20px; }
+
+  .login-form {
+    width: 80%; } }
+@media (max-width: 420px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+
+  .row {
+    width: 100%;
+    height: 100vh;
+    padding: 40px 20px; }
+
+  .login-form {
+    width: 90%; } }
 html, body {
   margin: 0 auto; }
 

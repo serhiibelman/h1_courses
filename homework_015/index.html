@@ -10,15 +10,18 @@
 	<div class="flex-container">
 		<div class="row">
 			<section class="avatar"></section>
-			<section class="usr-info">Some info</section>
+			<section class="usr-info">
+				<span>Войти как Kote</span>
+				<span>kote@ukr.net <a href="#">Не вы?</a></span>
+			</section>
 			<section class="login-form">
 				<form action="." method="POST">
-					<input type="password" name="password">
-					<button type="submit">Enter</button>
-					<button type="button">Restore account</button>
+					<input id="password" class="form-field" type="password" name="password" placeholder="Пароль" oninvalid="this.setCustomValidity('Вы ввели неверный пароль. Забыли пароль?')" required>
+					<button id="enter" class="form-field" type="submit">Вход</button>
+					<button id="restore" class="form-field" type="button">Восстановить аккаунт</button>
 				</form>
 			</section>
-			<a href="#">Зарегистрируйтесь на Facebook</a>
+			<a id="register" href="#">Зарегистрируйтесь на Facebook</a>
 		</div>
 	</div>
 </body>

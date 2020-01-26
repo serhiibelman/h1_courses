@@ -7,17 +7,48 @@ body
 
 .row
 	+flex(column, flex-start, center)
-	width: 50%
-	min-height: 24em
+	width: 40%
 	padding: 40px
 	background-color: $backgr-color-1
 
 .avatar
 	width: 100px
 	height: 100px
+	margin-bottom: 20px
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	background-image: url('../../src/img/cat2.jpeg')
 	background-color: gray
 
-.login-form
-	form
-		+flex(column, flex-start, center)
+.usr-info
+	text-align: center
+	+flex(column, flex-start, center)
+	span:first-child
+		margin-bottom: 10px
+		font-size: 20px
+	span:last-child
+		color: $corporate-color
+		font-size: 12px
+		margin-bottom: 40px
 
+.login-form
+	width: 60%
+	margin-bottom: 20px
+	form
+		+flex(column, flex-start, stretch)
+	#enter
+		padding: 10px 0
+		color: $corporate-color-2
+		background-color: $backrg-btn
+		border: none
+	#password
+		padding: 5px
+	#restore
+		padding: 5px 0
+		font-size: 12px
+	.form-field
+		margin-bottom: 10px
+
+#register
+	font-size: 12px
