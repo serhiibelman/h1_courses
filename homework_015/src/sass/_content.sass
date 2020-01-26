@@ -1,0 +1,22 @@
+body
+	background-color: $backgr-color-2
+
+.flex-container
+	+flex(column, center, center)
+	height: 100vh
+
+.row
+	+flex(column, flex-start, center)
+	width: 50%
+	min-height: 24em
+	padding: 40px
+	background-color: $backgr-color-1
+
+.avatar
+	width: 100px
+	height: 100px
+	background-color: gray
+
+.login-form
+	form
+		+flex(column, flex-start, center)

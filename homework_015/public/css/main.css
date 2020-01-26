@@ -1,0 +1,49 @@
+body {
+  background-color: lightgray; }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  min-height: 24em;
+  padding: 40px;
+  background-color: white; }
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  background-color: gray; }
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+
+html, body {
+  margin: 0 auto; }
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+/*# sourceMappingURL=main.css.map */

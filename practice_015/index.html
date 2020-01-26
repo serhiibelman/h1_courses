@@ -5,21 +5,17 @@
 	<link rel="stylesheet" type="text/css" href="public/css/main.css">
 </head>
 <body>
-<div class="content">
+<div>
 	<input type="checkbox" id="show">
-	<label for="show" class="btn_show">Show</label>
-	<div class="backdrop-container">
-		<label class="backdrop" for="show"></label>
-		<div class="search">
-			<header>Block</header>
-			<div class="content"></div>
-			<footer>
-				<div>Search</div>
-				<label for="show">Close</label>
-			</footer>
-		</div>
+	<label for="show" class="btn">Show</label>
+	<label id="backdrop" for="show"></label>
+	<div class="search">
+		<header>Search</header>
+		<section class="content"></section>
+		<footer>
+			<label for="show" id="close-btn" class="btn">Close</label>
+		</footer>
 	</div>
-	
 </div>
 </body>
 </html>
