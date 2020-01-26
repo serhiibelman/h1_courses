@@ -25,8 +25,10 @@
 		<div class="col-12 col-md-6 col-lg-4 col-xl-3 img img-11">DOLOR IN REPREHENDERIT</div>
 		<div class="col-12 col-md-6 col-lg-4 col-xl-3 img img-12">SUNT IN CULPA</div>
 	</div>
-	<section id="contacts">
-		<div class="close-btn"></div>
+	<input id="about" type="checkbox" name="about">
+	<label for="about" id="backdrop"></label>
+	<div id="contacts">
+		<label for="about" class="close-btn"></label>
 		<div class="contact-descr">
 			<h6>MAGNA FEUGIAT SED ADIPISCING</h6>
 			<p>
@@ -47,19 +49,22 @@
 			</p>
 		</div>
 		<form action="." method="POST">
-			<h5>GET IN TOUCH</h5>
+			<h6>GET IN TOUCH</h6>
 			<div class="flex-field">
 				<input id="name" class="form-field" type="text" name="name" placeholder="Name">
 				<input id="email" class="form-field" type="email" name="email" placeholder="Email">
 			</div>
 			<textarea id="subject" class="form-field" placeholder="Text"></textarea><br>
 			<input class="send-msg" type="submit" name="send-msg" value="SEND">
-			<input class="reset" type="button" name="reset" value="RESET">
+			<input class="reset" type="reset" name="reset" value="RESET">
 		</form>
-	</section>
+		<p class="copyright">
+			© Unttled. Demo Images: <a class="dotted-link" href="#">Unsplash</a>. Design: <a class="dotted-link" href="#">HTML5 UP</a>.
+		</p>
+	</div>
 	<footer>
-		<div>MULTIVERSE <span>BY HTML5 UP</span></div>
-		<div class="info"><a href="#contacts">ABOUT</a></div>
+		<div><a href="#"><span>MULTIVERSE</span> <span>BY HTML5 UP</span></a></div>
+		<label for="about" class="info">ABOUT</label>
 	</footer>
 </body>
 </html>

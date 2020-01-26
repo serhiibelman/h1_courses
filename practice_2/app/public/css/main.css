@@ -66,6 +66,7 @@
         border-bottom: none; }
   .welcome .btn {
     display: inline-block;
+    text-align: center;
     color: white;
     font-size: 12px;
     border: 1px solid #664BAA;
@@ -90,6 +91,7 @@
   color: #B0B1DE; }
   .about .btn {
     display: inline-block;
+    text-align: center;
     color: white;
     font-size: 12px;
     border: 1px solid #585AB8;
@@ -143,6 +145,7 @@
   background-color: #B74E91; }
   .labor .btn {
     display: inline-block;
+    text-align: center;
     color: white;
     font-size: 12px;
     border: 1px solid #BA5696;
@@ -163,7 +166,7 @@
 .labor-block {
   position: relative;
   width: 50%;
-  padding: 40px 40px 40px 120px;
+  padding: 40px 40px 40px 100px;
   border: 1px solid #C570A6;
   background-color: #BB5797; }
   .labor-block .content-title {
@@ -182,7 +185,7 @@
   background-color: white;
   border-radius: 50%;
   top: 30px;
-  left: 52px; }
+  left: 38px; }
 .labor-block .icon-1::before {
   content: "";
   font-family: "Font Awesome 5 Free";
@@ -255,6 +258,7 @@
     margin: 20px 0; }
   .contacts-form .send-msg {
     display: inline-block;
+    text-align: center;
     color: white;
     font-size: 12px;
     border: 1px solid #664BAA;
@@ -369,13 +373,62 @@
     width: 100%; }
 
   .contacts-form {
+    width: 100%;
     padding-bottom: 40px; }
 
   .contacts-info {
     padding-left: 0;
     padding-top: 40px;
     border-left: 0;
-    border-top: 1px solid #7C67B8; } }
+    border-top: 1px solid #7C67B8; }
+
+  .contacts-form {
+    width: 100%; } }
+@media (max-device-width: 570px) {
+  .content-wrap {
+    padding: 40px 30px; }
+
+  .menu-container {
+    display: none; }
+
+  .content {
+    margin-top: 0; }
+    .content .descr-title {
+      font-size: 30px; }
+    .content .w-descr {
+      width: 100%;
+      font-size: 18px; }
+
+  .btn {
+    width: 100%; }
+
+  .labor-block {
+    padding: 100px 30px 30px 30px; }
+
+  .about .content-p {
+    width: 100%; }
+
+  .name-email-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch; }
+
+  .input-cont-wrap {
+    width: 100%; }
+
+  .contacts-form {
+    padding-right: 0; }
+
+  .send-msg {
+    width: 100%; }
+
+  .footer {
+    font-size: 12px; }
+    .footer span {
+      display: block;
+      border: none;
+      padding: 5px 0; } }
 html, body {
   margin: 0 auto; }
 
